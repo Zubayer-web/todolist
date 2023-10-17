@@ -1,0 +1,193 @@
+body{  
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;   
+}
+.container{
+    width: 90%;
+    max-width: 1000px;    
+    box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, .2);
+    border-radius: 10px;    
+    min-height: 800px;
+    background-color: aqua;
+    padding: 40px;
+    text-align: center;
+}
+.to-do-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: .4em;
+    word-spacing: .6em;
+    background-color: bisque;
+    display: inline;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.add-new-task{
+    background-color: bisque;
+    margin-top: 50px;
+    text-align: left;
+    padding: 20px 40px 40px;
+    border-radius: 5px;
+}
+.add-new-task h2.add-new-task-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.add-new-text-form{    
+    display: flex;
+    flex-direction: row;    
+}
+label{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.ant-form-input-text{
+    width: 50%;
+}
+.ant-form-input-text input{
+    width: 95%;
+    padding: 10px 5px;
+    font-size: 20px;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;    
+}
+input[type=text]:focus {
+	outline: 1px solid #00FFFF;
+}
+.ant-form-input-priority{
+    width: 16%;
+    margin-right: 10px;
+}
+.ant-form-input-priority select{
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;    
+}
+input[type=select]:focus {
+	outline: 1px solid #00FFFF;
+}
+.ant-form-input-date{
+    width: 18%;
+    margin-right: 22px;
+}
+.ant-form-input-date input{
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;    
+}
+input[type=date]:focus {
+	outline: 1px solid #00FFFF;
+}
+.ant-form-input-button {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+.btn{       
+    font-size: 20px;
+    color: #111;
+    padding: 11px 35px;
+    background-color: #00FFFF;
+    border-radius: 5px;
+    border: 1px solid rgb(246, 197, 133);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.task-manage{
+    background-color: bisque;
+    margin-top: 50px;
+    text-align: left;
+    padding: 20px 40px 40px;
+    border-radius: 5px;
+}
+.task-manage-form{
+    display: flex;
+    flex-direction: row;
+}
+.task-manage-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 0em;
+}
+.task-manage-form{
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+  }
+.thead tr{
+    background-color: #00FFFF;
+    line-height: 2.7em;
+  }
+
+.table-spand{
+    display: flex;
+    justify-content: space-between; 
+}
+.icon-action li{
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+}
+.select-all-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #00FFFF;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.select-all-priority select {
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #FFE4C4;
+    border-radius: 5px;
+  }
+  .select-all-status select {
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #FFE4C4;
+    border-radius: 5px;
+  }
+  .select-all-search input{
+    width: 70%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #FFE4C4;
+    border-radius: 5px;    
+}
+.select-all-search select {
+    width: 28%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: 2px solid #FFE4C4;
+    border-radius: 5px;
+  }
+  input[type=search]:focus {
+	outline: 1px solid #FFE4C4;
+}
+  .select-all-delete{
+    font-size: 40px;
+    color: red;
+  }

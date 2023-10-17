@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Lists By Zubayer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2 class="to-do-title">To DO Lists</h2>
+            <!-- Add task -->
+            <div class="add-new-task">
+                <h2 class="add-new-task-title">Add your tasks</h2>
+                <div class="add-new-text-form">
+                    <div class="ant-form-input-text">
+                        <label for="adding-tesk">Tasks</label><br>
+                        <input type="text" name="" id="adding-tesk" required autocomplete="off">
+                    </div>
+                    <div class="ant-form-input-priority">
+                        <label for="priority">Priority</label><br>
+                        <select name="" id="priority">
+                            <option value="Select-one">Select one</option>
+                            <option value="saab">High</option>
+                            <option value="mercedes">Medium</option>
+                            <option value="audi">Low</option>
+                        </select>
+                    </div>
+                    <div class="ant-form-input-date">
+                        <label for="date">Date</label><br>
+                        <input type="date" name="" id="date">
+                    </div>
+                    <div class="ant-form-input-button">
+                        <button class="btn" type="submit">Add New</button>
+                    </div>
+                </div>
+            </div>
+            <!-- select all -->
+            <div class="task-manage">
+                <h2 class="task-manage-title">Manage Your Tasks</h2>
+                <div class="select-all-form">
+                    <div class="select-all-button">
+                        <button class="btn">Delete</button>
+                    </div>
+                    <div class="select-all-priority">
+                        <select name="" id="filter">
+                            <option value="Select-one">Select one</option>
+                            <option value="saab">High</option>
+                            <option value="mercedes">Medium</option>
+                            <option value="audi">Low</option>
+                        </select>
+                    </div>
+
+                    <div class="select-all-status">
+                        <select name="" id="sort">
+                            <option value="Select-one">Change status</option>
+                            <option value="saab">Complete</option>
+                            <option value="mercedes">Incomplete</option>
+                        </select>
+                    </div>
+
+                    <div class="select-all-search">                          
+                        <input type="search" name="" id="tesk-search">                 
+                        <select name="" id="priority">                           
+                            <option value="saab">Name</option>
+                            <option value="mercedes">Date</option>
+                        </select>
+                    </div>
+                    <div class="select-all-delete">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </div>
+                </div>
+                <!-- task manage form -->
+                <div class="task-manage-form">
+                    <div class="task-manage-Search">
+                        <label for="tesk-search">Search: </label>
+                        <input type="search" name="" id="tesk-search">
+                    </div>
+                    <div class="task-manage-filter">
+                        <label for="filter">Filter: </label>
+                        <select name="" id="filter">
+                            <option value="Select-one">Select one</option>
+                            <option value="saab">High</option>
+                            <option value="mercedes">Medium</option>
+                            <option value="audi">Low</option>
+                        </select>
+                    </div>
+
+                    <div class="task-manage-sort">
+                        <label for="sort">Sort: </label>
+                        <select name="" id="sort">
+                            <option value="Select-one">Select one</option>
+                            <option value="saab">High</option>
+                            <option value="mercedes">Medium</option>
+                            <option value="audi">Low</option>
+                        </select>
+                    </div>
+                    <div class="task-manage-filter">
+                        <label for="priority">Sort: </label>
+                        <select name="" id="priority">
+                            <option value="Select-one">Select one</option>
+                            <option value="saab">High</option>
+                            <option value="mercedes">Medium</option>
+                            <option value="audi">Low</option>
+                        </select>
+                    </div>
+                    <div class="task-manage-date">
+                        <label for="by_date">Date: </label>
+                        <input type="date" name="" id="by_date">
+                    </div>
+                </div>
+                <!-- table -->
+                <table>
+                    <thead class="thead">
+                        <tr>
+                            <th><input type="checkbox" name="" id="">All</th>
+                            <th>No</th>
+                            <th>Task Name</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>1</td>
+                            <td>jhklnlk</td>
+                            <td>high</td>
+                            <td>incomplete</td>
+                            <td>2023-10-17</td>
+                            <td><ul class="icon-action">
+                                <li><i class="fa-solid fa-trash"></i></li>
+                                <li><i class="fa-solid fa-square-check"></i></li>
+                                <li><i class="fa-solid fa-pen-to-square"></i></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>1</td>
+                            <td>jhklnlk</td>
+                            <td>high</td>
+                            <td>incomplete</td>
+                            <td>2023-10-17</td>
+                            <td><ul class="icon-action">
+                                <li><i class="fa-solid fa-trash"></i></li>
+                                <li><i class="fa-solid fa-square-check"></i></li>
+                                <li><i class="fa-solid fa-pen-to-square"></i></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>1</td>
+                            <td>jhklnlk</td>
+                            <td>high</td>
+                            <td>incomplete</td>
+                            <td>2023-10-17</td>
+                            <td><ul class="icon-action">
+                                <li><i class="fa-solid fa-trash"></i></li>
+                                <li><i class="fa-solid fa-square-check"></i></li>
+                                <li><i class="fa-solid fa-pen-to-square"></i></li>
+                            </ul></td>
+                        </tr>
+                   
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
